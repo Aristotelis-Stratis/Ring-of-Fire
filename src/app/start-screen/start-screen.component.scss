@@ -38,11 +38,13 @@
         text-decoration: none;
         display: inline-block;
         font-size: 16px;
-        transition-duration: 0.4s;
+        transition-duration: 0.2s;
+        cursor: pointer;
     }
 
     >button:hover {
         background-color: #b63128;
         color: white;
+        filter: brightness(1.25)
     }
 }
