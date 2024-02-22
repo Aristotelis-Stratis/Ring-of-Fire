@@ -9,7 +9,7 @@ import { MatCardModule } from '@angular/material/card';
   templateUrl: './game-info.component.html',
   styleUrl: './game-info.component.scss'
 })
-export class GameInfoComponent implements OnInit {
+export class GameInfoComponent implements OnInit, OnChanges {
 
   cardAction = [
     { title: 'Waterfall', description: 'Everyone has to start drinking at the same time. As soon as player 1 stops drinking, player 2 may stop drinking. Player 3 may stop as soon as player 2 stops drinking, and so on.' },
@@ -34,7 +34,6 @@ export class GameInfoComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    console.log('Current card:', this.card);
   }
 
   ngOnChanges(): void {
